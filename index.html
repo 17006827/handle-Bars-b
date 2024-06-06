@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars & materialized</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+   
+<!-- ------------------------------------------ -->
+    <!-- ------------------------------------------ -->
+    <div class="divider"></div>
+    <div class="container">
+        <div class="row">
+            <div class="basil-flex">
+ <div class="col s12 m6">
+                <div class="basil2">
+                  <h4> {{user.fullName}} </h4>
+                </div>
+            </div>
+                <div>
+                    <img class="profile-image" src="{{user.photo}}" alt="{{user.alt}}">
+                </div>
+            </div>
+           
+        
+        </div>
+       
+    </div>
+ <div class="divider"></div>
+    <div class="container"> <div class="center-align">
+        <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+    </div>
+        <div>
+            <div class="col s12 m6 l6">
+                <div class="center-align">
+                    <h4>{{city.name}}</h4>
+                </div>
+                
+                    <div class="basil-flex">
+                        <div class="center-align">
+                            <img src="{{city.photo}}" alt="{{city.alt}}" > 
+                        </div>
+                         
+                    <p> {{{city.description}}}</p>
+                    </div>
+                   
+                
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="center-align">
+                    <h2>Foreign Language</h2>
+                </div>
+    
+                <div class="center-align">
+                    <p>
+                        {{foreignLanguage.language}} 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <table class="table" style="width: 100%">
+                    {{#each foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <!-- historical location steps-->
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="center-align">
+                    <h2>{{historyPageTitle.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each historicalPlaces}}
+                    <h3>
+                        {{name-base}}
+                    </h3>
+                    <p>{{{description-base}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each historicalPlaces}}
+                    <div class="image-wrapper">
+                        <img class="park-image" src="{{photo-base}}" alt="{{alt-base}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 push-s6 m2">
+                <div>
+                    {{#each historicalPlaces}}
+                    <h3>{{name-park}}</h3>
+                    <p>{{{description-park}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 pull-s6 m2 l2 place-images flex-container">
+                {{#each historicalPlaces}}
+                    <div class="image-wrapper">
+                        <img class="park-image" src="{{photo-park}}" alt="{{alt-union}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each historicalPlaces}}
+                    <h3>{{name-new}}</h3>
+                    <p>{{{description-new}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each historicalPlaces}}
+                    <div class="image-wrapper">
+                        <img class="new-image" src="{{photo-new}}" alt="{{alt-new}}">
+                    </div>
+                {{/each}}
+            </div>
+            
+        </div>
+    </div>
+
+  
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="center-align">
+                    <h2>{{FavorTitle.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- favourate subject location-->
+
+    <!-- New Handlebars Template for F-Subjects -->
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each Subjects}}
+                    <h3 class="h3-text">
+                        {{name-O}}
+                    </h3>
+                    <p>{{{description-O}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 place-images flex-container">
+                {{#each Subjects}}
+                    <div class="image-wrapper">
+                        <img class="park-image" src="{{photo-O}}" alt="{{alt-O}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 push-s6 m2 l2">
+                <div>
+                    {{#each Subjects}}
+                    <h3 class="h3-text">{{name-P}}</h3>
+                    <p>{{{description-P}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 pull-s6 m2 l2 place-images flex-container">
+                {{#each Subjects}}
+                    <div class="image-wrapper">
+                        <img class="park-image" src="{{photo-P}}" alt="{{alt-P}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 m2 l2 ">
+                <div>
+                    {{#each Subjects}}
+                    <h3 class="h3-text">{{name-Q}}</h3>
+                    <p>{{{description-Q}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each Subjects}}
+                    <div class="image-wrapper">
+                        <img class="new-image" src="{{photo-Q}}" alt="{{alt-Q}}">
+                    </div>
+                {{/each}}
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./clarisse-meyer-pHAjvHO1pws-unsplash.jpg');
+    background-size: cover;
+    color: #f8fafa; /* Font color for better readability */
+}
+.basil2{
+    margin-top: 97px;
+    margin-left: 200px;
+
+}
+/* Profile section style */
+.profile-image {
+    width: 200px; 
+    height: 200px;
+    margin-top: 1em;
+    border-radius: 10em;
+}
+
+.full-name {
+    margin-left: -9em;
+}
+
+.full-name p {
+    font-size: 2em;
+    
+}
+
+/* City section style */
+
+.image-city-class img {
+    width: 200px;
+    height: 200px;
+    max-width: 70%;
+    border-radius: 10em;
+}
+
+/* Foreign language section styles */
+.lang h2 {
+    font-size: 2em;
+}
+
+.table, tr, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/* Historical title style */
+
+
+img.park-image, 
+img.base-image, 
+img.new-image {
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.basil-flex{
+    display: flex;
+}
+.basil-flex p{
+    color: rgb(94, 87, 87);
+    margin-left: 4px;
+    margin-bottom: -10px;
+    margin-top: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    }
+    
+
+
+.basil-flex img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+.flex-container-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col.s6.m2.l2.place-images.flex-container {
+    height: 21em;
+    align-items: center;
+}
+
+.col.s6.m2.l2.place-images.flex-container-sub {
+    height: 21em;
+    align-items: center;
+}
+
+
+.institution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.institution h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+.center-align p{
+    color: brown;
+    }
+    
+
+@media screen and (max-width: 600px) {
+    
+    .basil-flex {
+        display: inline-block;
+    
+    }
+    .basil-flex p{
+    margin-top: 15px;
+    }
+    .mahoya{
+        display: flex;
+    }
+    .basil2{
+        margin-top: 9px;
+        margin-left: 10px;
+
+    .full-name {
+        height: 0px;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .full-name p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    img.park-image,
+    img.union-image,
+    img.new-image {
+        max-width: 100%;
+    
+    }
+    img.soweto-image,
+img.suncity-image,
+img.newtown-image {
+    max-width: 100%;
+}
+
+    img.O-image,
+    img.P-image,
+    img.Q-image {
+    max-width: 100%;
+}
+    
+    .center-align {
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically */
+      /* Optional: Sets the height of the container to full viewport height for demonstration */
+    }
+    
+  
+    }
+}

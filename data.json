@@ -1,0 +1,83 @@
+
+{
+    "user" : {
+        "fullName": "Mr Basil",
+        "photo" : "./BaseinCar.jpg",
+        "alt" : "Mr basil loading"
+    },
+
+    "city" : {
+        "name" : "Los Angeles",
+        "photo" : "./los Angels.jpeg",
+        "description" : "The huge, sprawling, and tortuously shaped city of Los Angeles occupies a sizable portion of the southern part of the county. It too has a varied topography, climbing from sea level at the beach community of Venice to Mount Lukens.....Los Angeles is known to be the entertainment capital of the world. Many movies, television shows and fashion shows are made in Hollywood and are often set in Los Angeles. Los Angeles has the second largest Hispanic and Latino population in the United States, only behind New York City. has a diverse economy with a broad range of industries. Los Angeles is best known as the home of the Hollywood film industry, the world's largest by revenue; the city was an important site in the history of film. It also has one of the busiest container ports in the Americas. Hollywood stars, the TV & movie industries, and gorgeous beaches all make LA a famous city and a popular vacation spot. LA, is one of the most well-known cities..",
+        "alt" : "the beauty of LA"
+    },
+
+    "foreignLanguage" : {
+        "language" : "I'd like to learn Japanese",
+        "phrases" : [
+        {
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "Konnichiwa"
+        },
+        {
+            "englishPhrase" : "How are you",
+            "foreignLanguage" : "O-genki desu ka?"
+        },
+
+        {
+            "englishPhrase" : "peace n love",
+            "foreignLanguage" : "heiwa n ai"
+        }]
+    },
+
+    "historyPageTitle" : {
+        "title" : "Historical Places"
+    },
+
+    "historicalPlaces" : [
+        {
+            "name-park" : "freedom-park",
+            "description-park" : "Remembrance Hub,Cultural Icon,Educational Oasis",
+            "photo-park" : "./freedom-park.jpg",
+            "alt-park" : "freedompark image"
+        },
+        {
+            "name-base" : "union-building",
+            "description-base" : "Designed by Sir Herbert Baker, office of the President.,Architectural Marvel, ",
+            "photo-base" : "./union-building.jpg",
+            "alt-base" : "union's image"
+        },
+        {
+            "name-new" : "voortrekker Monument",
+            "description-new" : "Pillar of Afrikaner Heritage, Symbol of Afrikaner Identity, Architectural Marvel: Designed by architect Gerard Moerdijk",
+            "photo-new" : "./Voortrekker-Monument.jpg",
+            "alt-new" : "voortrekker image"
+        }
+    ],
+
+    "FavorTitle" : {
+        "title" : "Favorite Subjects"
+    },
+    
+    "Subjects" : [
+        {
+            "name-O" : "Object-oriented",
+            "description-O" : "Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.",
+            "photo-O" : "./oopimg.png",
+            "alt-O" : "OBJECT ORIENTED"
+        },
+        {
+            "name-P" : "Database management",
+            "description-P" : "A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS)",
+            "photo-P" : "./database.png",
+            "alt-P" : "DATABASE picture"
+        },
+        {
+            "name-Q" : "System Development module",
+            "description-Q" : "The Diploma in Systems Development prepares you with knowledge, theory, and methodology of the important disciplines in information technology systems development. Dive into the intricate world of business principles, workflow management, and technological resources",
+            "photo-Q" : "./systemDev.jpeg",
+            "alt-Q" : "systemdevelopment picture"
+        }
+    ]
+}
